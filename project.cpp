@@ -1,4 +1,3 @@
-﻿
 #include <iostream>
 #include <Windows.h>
 #include "Ahaw.h"
@@ -6,7 +5,7 @@
 using namespace std;
 struct sportsmen
 {
-    string prizv = "";
+    string prizv="";
     string name = "";
     double speed_run = 0;
     double km3_run = 0;
@@ -17,7 +16,7 @@ int main()
 {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
-    int variant = 0;
+    int variant = 0,variant2=0;
     bool povtor = true;
     while (povtor)
     {
@@ -36,7 +35,6 @@ int main()
             cucl(povtor);
             break;
         case 3:
-            int v2;
             cout << "Введіть варіант: ";
             cin >> v2;
             switch (v2)
@@ -65,3 +63,6 @@ int main()
     }
 
 }
+
+}
+
