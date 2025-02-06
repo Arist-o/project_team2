@@ -1,7 +1,7 @@
-﻿
 #include <iostream>
 #include <Windows.h>
-#include "viktor.h"
+#include "Ahaw.h"
+#include "Viktor.h"
 using namespace std;
 struct sportsmen
 {
@@ -16,7 +16,7 @@ int main()
 {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
-    int variant = 0;
+    int variant = 0,variant2=0;
     bool povtor = true;
     while (povtor)
     {
@@ -35,6 +35,25 @@ int main()
             cucl(povtor);
             break;
         case 3:
+            cout << "Введіть варіант: ";
+            cin >> v2;
+            switch (v2)
+            {
+            case 1:
+                Ahaw_1();
+                break;
+            case 2:
+                break;
+            case 3:
+                Ahaw_3();
+                break;
+            case 4:
+                break;
+            case 5:
+                break;
+            case 6:
+                break;
+            }
             cucl(povtor);
             break;
         case 4:
@@ -44,3 +63,6 @@ int main()
     }
 
 }
+
+}
+

@@ -20,8 +20,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="viktor.h">
+
+    <ClInclude Include="Ahaw.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Viktor.h">
   </ItemGroup>
 </Project>
