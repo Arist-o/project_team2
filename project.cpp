@@ -2,6 +2,7 @@
 #include <iostream>
 #include <Windows.h>
 #include "Ahaw.h"
+#include "Viktor.h"
 using namespace std;
 struct sportsmen
 {
@@ -35,6 +36,26 @@ int main()
             cucl(povtor);
             break;
         case 3:
+            int v2;
+            cout << "Введіть варіант: ";
+            cin >> v2;
+            switch (v2)
+            {
+            case 1:
+                Ahaw_1();
+                break;
+            case 2:
+                break;
+            case 3:
+                Ahaw_3();
+                break;
+            case 4:
+                break;
+            case 5:
+                break;
+            case 6:
+                break;
+            }
             cucl(povtor);
             break;
         case 4:

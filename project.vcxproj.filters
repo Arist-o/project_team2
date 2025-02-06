@@ -23,5 +23,8 @@
     <ClInclude Include="Ahaw.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Viktor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
