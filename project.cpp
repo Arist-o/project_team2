@@ -16,7 +16,7 @@ int main()
 {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
-    int variant = 0;
+    int variant = 0,variant2=0;
     bool povtor = true;
     while (povtor)
     {
@@ -35,6 +35,12 @@ int main()
             cucl(povtor);
             break;
         case 3:
+            cout << "Виберіть зі списку" << endl;
+            cin >> variant2;
+            switch (variant2)
+            {
+            
+            }
             cucl(povtor);
             break;
         case 4:
