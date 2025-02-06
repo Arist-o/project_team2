@@ -130,7 +130,8 @@
     <ClCompile Include="project.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="viktor.h" />
+    <ClInclude Include="Ahaw.h" />
+    <ClInclude Include="Viktor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
