@@ -5,8 +5,8 @@
 using namespace std;
 struct sportsmen
 {
-    string prizv="";
-    string name = "";
+    char prizv[50];
+    char name[50];
     double speed_run = 0;
     double km3_run = 0;
     int pres = 0;
@@ -16,28 +16,32 @@ int main()
 {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
-    int variant = 0,variant2=0;
+    int variant = 0,variant2=0,kilk=0;
     bool povtor = true;
+    fstream file;
+    sportsmen s;
     while (povtor)
     {
         cout << R"(Виберіть що хочете зробити зі списку запропонованих дій:
-                                                                    1 Створення бінарного файлу
+                                                                    1 Створення файлу
                                                                     2 Прочитати файл на екран
-                                                                    3 Вибрати з дальнійшого варіанту списку дію
+                                                                    3 Вибрати з дальнійшого варіанту списку дій для дозапису в файл
                                                                     4 дозапис даних у файл)" << endl;
         cin >> variant;
         switch (variant)
         {
         case 1:
+            create_file(file, s,kilk);
             cucl(povtor);
             break;
         case 2:
+            read_file(file);
             cucl(povtor);
             break;
         case 3:
             cout << "Введіть варіант: ";
-            cin >> v2;
-            switch (v2)
+            cin >> variant2;
+            switch (variant2)
             {
             case 1:
                 Ahaw_1();
@@ -57,12 +61,11 @@ int main()
             cucl(povtor);
             break;
         case 4:
+            dopus(file, s,kilk);
             cucl(povtor);
             break;
         }
     }
-
-}
 
 }
 

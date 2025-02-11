@@ -8,11 +8,10 @@
 #include <Windows.h>
 using namespace std;
 
-void Ahaw_1();
 
 void Ahaw_1()
 {
-    ifstream f("sportsmen.dat", ios::binary);
+    ifstream f("file.dat", ios::binary);
     if (!f)
     {
         cout << "Помилка відкриття файлу." << endl;
